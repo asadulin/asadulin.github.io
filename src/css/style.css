@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+}
+
+section {
+	height: 100vh;
+	background-color: #202020;
+	position: relative;
+}
+
+.sect_1 {
+	background-image: url(../img/f4.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.head_text {
+    color: #fff;
+    display: inline-block;
+    font-family: "Arial",serif;
+    font-size: 32px;
+    font-weight: bold;
+    height: 102px;
+    left: 50%;
+    margin-left: -148px;
+    margin-top: -51px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    width: 296px;
+}
+
