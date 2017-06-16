@@ -44,7 +44,7 @@ body {
 	padding: 0;
 }
 
-section {
+.window {
 	min-height: 100vh;
 	background-color: #202020;
 	position: relative;
@@ -96,7 +96,7 @@ section {
 	color: #fff;
 	font-size: 46px;
 }
-.head_text .aaa{
+.head_text .first_text{
 	color: #fff;
 	font-size: 47px;
 }
@@ -146,7 +146,6 @@ section {
 .name{
 	text-align: center;
 	transform: translate(0%, -100%) rotate(180deg);
-	/*transform: rotate(180deg);*/
 	opacity: 0;
 	-webkit-transition: all 1s ease;;
 	-moz-transition: all 1s ease;;

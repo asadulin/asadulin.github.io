@@ -1,56 +1,59 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
 <html lang="ru">
+<!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
-	<title>My SITE...</title>
+	<meta charset="utf-8" />
+	<title>Сайт-визитка WEB-разработчика</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="src/img/favicon.png" />
 	<link rel="stylesheet" href="src/css/style.css">
 	<link rel="stylesheet" href="src/css/load.css">
 	<link rel="stylesheet" href="src/css/bootstrap-grid-3.3.1.min.css">
 	<link rel="stylesheet" href="src/css/font-awesome.min.css">
 </head>
 <body>
-
-	<div class="l_wrap">
+	<section class="l_wrap">
 		<div class="cssload-loader">
 			<div class="cssload-inner cssload-one"></div>
 			<div class="cssload-inner cssload-two"></div>
 			<div class="cssload-inner cssload-three"></div>
 		</div>
-	</div>
+	</section>
 
-	<section class="sect_0">
-	<div class="sect_1">
-		<div class="img">
-			<pre id="pageText"></pre>
-		</div>
-		<div class="cont row">
-			<!-- <div class=""> -->
+	<header class="window">
+		<div class="sect_1">
+			<div class="img">
+				<pre id="pageText"></pre>
+			</div>
+			<div class="cont row">
 				<div class="head_row col-md-9">
-					<div class="head_text"><a class="aaa">Сайт - Портфолио</a><br><a>Вэб-разработчика</a>
-
-					<div class="soc_butttom">
-						<ul>
-							<li class="soc"><a href="https://www.facebook.com/don.asadulin" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-							<li class="soc"><a href="https://www.instagram.com/ruslanasadulin/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li class="soc"><a href="https://github.com/asadulin" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						</ul>
+					<div class="head_text"><a class="first_text">Сайт - Портфолио</a><br><a>Вэб-разработчика</a>
+						<nav class="soc_butttom">
+							<ul>
+								<li><a href="https://www.facebook.com/don.asadulin" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com/ruslanasadulin/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="https://github.com/asadulin" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+							</ul>
+						</nav>
 					</div>
-					</div>
-
 				</div>
 				<div class="col-md-3"></div>
-			<!-- </div> -->
-		</div>
-	</div>
-	</section>
-	<section>
-		<div class="row">
-			<div class="col-lg-12 name">
-				<!-- <h2>Привет. <br>Меня зовут Руслан...)</h2> -->
-				<h1>Приветствую!</h1>
 			</div>
 		</div>
-		<div class="row about">
+	</header>
+	<section class="window">
+		<header class="row">
+			<div class="col-lg-12 name">
+				<h1>Приветствую!</h1>
+			</div>
+		</header>
+		<section class="row">
 			<div class="col-md-2 col-sm-1 col-xs-12 dot1"></div>
 			<div class="abv col-md-4 col-sm-5 col-xs-12 dot1">
 				<h2>Кто я?</h2>
@@ -122,24 +125,23 @@
 				</ul>
 			</div>
 			<div class="col-md-2 col-sm-1 col-xs-12 dot2"></div>
-		</div>
-		<div class="row foot_col">
+		</section>
+		<footer class="row foot_col">
 			<div class="footer">
 				<!-- <a><i class="fa fa-mobile" aria-hidden="true"></i> +7 (9**) ***-**-**</a><br> -->
 				<a href="mailto:James@xakep.ru?subject=***;"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a> James@xakep.ru</a>
 			</div>
-			<div class="soc_butttom">
+			<nav class="soc_butttom">
 				<ul>
-					<li class="soc"><a href="https://www.facebook.com/don.asadulin" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-					<li class="soc"><a href="https://www.instagram.com/ruslanasadulin/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					<li class="soc"><a href="https://github.com/asadulin" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.facebook.com/don.asadulin" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.instagram.com/ruslanasadulin/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/asadulin" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 				</ul>
-			</div>
-				
-		</div>
+			</nav>
+		</footer>
 	</section>
-
-	  <!-- <script src="src/js/jquery-3.2.1.min.js"></script> -->
+	<footer></footer>
+	<!-- <script src="src/js/jquery-3.2.1.min.js"></script> -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="src/js/parallax.js"></script>
 	<script src="src/js/load.js"></script>
@@ -171,5 +173,6 @@ function show() {
 };
 </script>
 </pre>
+
 </body>
 </html>
