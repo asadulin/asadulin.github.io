@@ -4,21 +4,21 @@ jQuery('document').ready(function(){
 
 
 	function click() {
-		var tx = jQuery('#input').val();
-		var ttx = tx.replace(/\s*/g,'');
-		var x = 1;
-		var txx = ttx + 1;
+		var text = jQuery('#input').val().replace(/[!@#$%^&*()_+,."'<>/\\:;?№`~|\[\]\{\}]/g, '');
+		var id_li = text.replace(/\s*/g,'');
+		//var x = 1;
+		var id_input = id_li + 1;
 
-		if (ttx != "") {
-			jQuery('ul').append('<li id="' + ttx + '"><input id="' + txx + '" type="checkbox">' + tx + '</li>');
+		if (id_li != "") {
+			jQuery('ul').append('<li id="' + id_li + '"><input id="' + id_input + '" type="checkbox">' + text + '</li>');
 		} else {
 			alert('Пустое значение!');
 		};
 
 		jQuery('#input').val('');
 
-		jQuery('#' + txx).on('click', function() {
-			jQuery('#' + ttx).remove();
+		jQuery('#' + id_input).on('click', function() {
+			jQuery('#' + id_li).remove();
 		});
 	};
 
