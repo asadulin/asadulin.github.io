@@ -3,3 +3,59 @@ body {
 	font-family: sans-serif;
 	color: green;
 }
+
+.wrapper{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.wrapper > div{
+	margin: 20px;
+}
+
+#todo #input{
+	width: calc(100% - 25px);
+	margin: 5px;
+}
+
+#todo button{
+	width: calc(100% - 7px);
+	margin: 5px;
+}
+
+#calc fieldset{
+	padding: 10px
+}
+
+#calc input{
+	width: calc(100% - 25px);
+	font-size: 30px;
+	margin: 5px;
+}
+
+#calc button{
+	margin: 5px;
+	padding: 5px 0;
+	width: 20%;
+	flex-grow: 1;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+#calc .buttons{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
