@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <ValCurs Date="04.07.2017" name="Foreign Currency Market">
+<Valute ID="1">
+	<NumCode>036</NumCode>
+	<CharCode>RUB</CharCode>
+	<Nominal>1</Nominal>
+	<Name>Российский рубль</Name>
+	<Value>1,0000</Value>
+</Valute>
 <Valute ID="R01010">
 	<NumCode>036</NumCode>
 	<CharCode>AUD</CharCode>
