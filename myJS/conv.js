@@ -33,7 +33,7 @@ function loadXMLDoc() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "XML_daily.asp", true);
+  xmlhttp.open("GET", "XML_daily.xml", true);
   xmlhttp.send();
 }
 function myFunction(xml) {
