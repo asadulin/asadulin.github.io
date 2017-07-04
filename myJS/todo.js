@@ -1,6 +1,6 @@
 jQuery('document').ready(function(){
 
-	jQuery('#todo').append('<fieldset><legend>Мой список задач</legend><ul></ul><b>Новое задание:</b><br><input id="input" type="text"><button>Записать</button></fieldset>');
+	jQuery('#todo').append('<fieldset><legend>Мой список задач</legend><ul></ul><b>Новое задание:</b><br><input id="input" type="text"><button id="button">Записать</button></fieldset>');
 
 
 	function click() {
@@ -29,7 +29,7 @@ jQuery('document').ready(function(){
 		};
 	});
 
-	jQuery('button').on('click', function() {
+	jQuery('#button').on('click', function() {
 		click();
 	});
 });
