@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ValCurs Date="04.07.2017" name="Foreign Currency Market">
 <Valute ID="1">
 	<NumCode>036</NumCode>
