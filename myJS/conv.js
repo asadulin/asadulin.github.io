@@ -2,14 +2,15 @@ var num;
 
 jQuery('document').ready(function(){
 
-	jQuery('#conv').append('<fieldset><legend>Конвертор валюты</legend><div class="valute"><b>Из</b><select id="cod" size="1"></select><p id="val">1.0000</p><p id="name">RUB</p></div><br><div class="valute"><b>В</b><select id="cod2" size="1"></select><p id="val2">1.0000</p><p id="name2">RUB</p></div><br><div class="valute"><input id="x" type="text" placeholder="Кол-во" /><button id="convert">Конверт.</button></div><br><div class="valute"><b>Итого:</b><p id="rez"></p></div></fieldset>');
+	 jQuery('#conv').append('<fieldset><legend>Конвертор валюты</legend><div class="valute"><b>Из</b><select id="cod" size="1"></select><p id="val">1.0000</p><p id="name">RUB</p></div><br><div class="valute"><b>В</b><select id="cod2" size="1"></select><p id="val2">1.0000</p><p id="name2">RUB</p></div><br><div class="valute"><input id="x" type="text" placeholder="Кол-во" /><button id="convert">Конверт.</button></div><br><div class="valute"><b>Итого:</b><p id="rez"></p></div></fieldset>');
 
-	loadXMLDoc();
+	 loadXMLDoc();
 
 	jQuery('#cod').on('click', function() {
 		num = jQuery('#cod').val();
 		loadXMLDoc2(num);
 		loadXMLDoc4(num);
+
 	});
 	jQuery('#cod2').on('click', function() {
 		num = jQuery('#cod2').val();
@@ -37,12 +38,13 @@ function loadXMLDoc() {
   xmlhttp.send();
 }
 function myFunction(xml) {
-  var x, i, xmlDoc, txt;
+  var x, y, i, xmlDoc, txt;
   xmlDoc = xml.responseXML;
   txt = "";
   x = xmlDoc.getElementsByTagName("Name");
+  y = xmlDoc.getElementsByTagName("Value");
   for (i = 0; i< x.length; i++) {
-    txt += "<option value='" + i + "'>" + x[i].childNodes[0].nodeValue + "</option>";
+    txt += "<option value='" + y[i].childNodes[0].nodeValue + "'>" + x[i].childNodes[0].nodeValue + "</option>";
   }
   document.getElementById("cod").innerHTML = txt;
   document.getElementById("cod2").innerHTML = txt;
@@ -121,6 +123,6 @@ function myFunction5(xml, number) {
   document.getElementById("name2").innerHTML = txt;
 }
 
-	
+
 });
 
