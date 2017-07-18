@@ -17,6 +17,12 @@ a{
 	text-decoration: none;
 	color: #fff;
 }
+input{
+	color: #fff;
+}
+input:focus{
+	outline:none !important;
+}
 
 .window{
 	height: 100vh;
