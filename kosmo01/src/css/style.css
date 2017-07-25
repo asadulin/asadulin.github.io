@@ -68,6 +68,14 @@ input:focus{
 	position: absolute;
 	left: -100px;
 	list-style-type: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 500px
 }
 
 .left_menu li{
@@ -78,18 +86,21 @@ input:focus{
 	-webkit-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
 	filter: grayscale(100%);
+	padding: 10px;
 }
 .left_menu img:hover{
 	-webkit-filter: grayscale(0%);
 	-o-filter: grayscale(0%);
 	filter: grayscale(0%);
 	width: 35px;
+	padding: 7px 0 8px 0;
 }
 .left_menu img.activ{
 	-webkit-filter: grayscale(0%);
 	-o-filter: grayscale(0%);
 	filter: grayscale(0%);
 	width: 35px;
+	padding: 7px 0 8px 0;
 }
 /*.wrap{
 	position: fixed;
@@ -221,4 +232,27 @@ input:focus{
 .submit:hover{
 	background-color: #58B6FF;
 	border: 0;
+}
+
+
+.windows{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 10;
+}
+#text{
+  -webkit-transform:  scale(0) rotate(0deg) translate(-1000px, 1000px);
+  -ms-transform:  scale(0) rotate(0deg) translate(-1000px, 1000px);
+  -o-transform:  scale(0) rotate(0deg) translate(-1000px, 1000px);
+  transform:  scale(0) rotate(0deg) translate(-1000px, 1000px);
+/*  width: 200px;
+  height: 200px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: transform 3s ease 1s;
+  -o-transition: transform 3s ease 1s;
+  transition: transform 3s ease 1s;
 }

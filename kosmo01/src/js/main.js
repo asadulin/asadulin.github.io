@@ -1,4 +1,9 @@
+document.getElementById('text').style.transform = "scale(1) rotate(720deg) translate(-50%, -50%)";
+
 window.onload = function(){
+	setTimeout(function(){
+			document.getElementById('windows').style.display = "none";
+	}, 5000);
 	document.getElementById("i_hello").className = 'activ';
 	document.getElementById("hello").style.opacity = "1";
 	document.getElementById("hello").style.transform ="translate(0%, 0%)";
